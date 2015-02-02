@@ -20,12 +20,26 @@ Or install it yourself as:
 
 ## Usage
 
-### Client
-    client = SendGridWebApi::Client.new("username", "password")
+   ```
+   client = SendGridWebApi::Client.new("username", "password")
+   ```
+   Get bounced emails:
+   ```
+   bounced_email = client.bounce.get
+
+   bounced_email.each { |e| puts e['email'] }
+   bounced_email.each { |e| client.bounce.delete({email: e["email"]}) }
+   ```
+
+   Get the last 5 days of blocked emails:
+
+   ```
+   client.block.get({ days:5 })
+   ```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/send_grid_web_api/fork )
+1. Fork it ( https://github.com/cshirley/send_grid_web_api/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
