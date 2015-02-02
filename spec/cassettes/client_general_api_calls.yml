@@ -1,0 +1,138 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sendgrid.com/api/bounces.get.json?api_key=password123&api_user=sendgrid_user&invalid_param=foobar
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 02 Feb 2015 11:39:49 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - https://sendgrid.com
+    body:
+      encoding: UTF-8
+      string: '[{"status": "5.1.1", "reason": "550 5.1.1 The email account that you
+        tried to reach does not exist. Please try double-checking the recipient''s
+        email address for typos or unnecessary spaces. Learn more at http://support.google.com/mail/bin/answer.py?answer=6596
+        a9si568424ici.38 - gsmtp ", "email": "testing.odi5@gmail.com"},{"status":
+        "554", "reason": "554 delivery error: dd This user doesn''t have a yahoo.co.uk
+        account (d0nalacantara@yahoo.co.uk) [0] - mta1167.mail.ir2.yahoo.com ", "email":
+        "d0nalacantara@yahoo.co.uk"},{"status": "5.5.0", "reason": "550 Requested
+        action not taken: mailbox unavailable (-1389492669:4139:-2147467259)", "email":
+        "mohamed-irac1@hotmail.com"},{"status": "550", "reason": "550 Invalid recipient
+        <cbengineeringcambs@outlook.co.uk> (#5.1.1) ", "email": "cbengineeringcambs@outlook.co.uk"},{"status":
+        "5.1.1", "reason": "550 5.1.1 <andrew.rabera@synectika.uk>... User unknown
+        ", "email": "andrew.rabera@synectika.uk"},{"status": "5.1.1", "reason": "550
+        5.1.1 The email account that you tried to reach does not exist. Please try
+        double-checking the recipient''s email address for typos or unnecessary spaces.
+        Learn more at http://support.google.com/mail/bin/answer.py?answer=6596 gb19si980506icb.23
+        - gsmtp ", "email": "jophnwybor@gmail.com"},{"status": "550", "reason": "550
+        Requested action not taken: mailbox unavailable ", "email": "birgeesqazi@hotmail.com"},{"status":
+        "550", "reason": "550 #5.1.0 Address rejected. ", "email": "kirsty@daverreader.karoo.co.uk"},{"status":
+        "554", "reason": "554 delivery error: dd This user doesn''t have a yahoo.com
+        account (rasedahsan@yahoo.com) [0] - mta1583.mail.gq1.yahoo.com ", "email":
+        "rasedahsan@yahoo.com"},{"status": "550", "reason": "550 Requested action
+        not taken: mailbox unavailable ", "email": "aliasgor18@hotmail.com"},{"status":
+        "5.1.1", "reason": "550 5.1.1 The email account that you tried to reach does
+        not exist. Please try double-checking the recipient''s email address for typos
+        or unnecessary spaces. Learn more at http://support.google.com/mail/bin/answer.py?answer=6596
+        v4si1567047igk.34 - gsmtp ", "email": "kofibansu@gmail.com"},{"status": "5.5.0",
+        "reason": "550 Requested action not taken: mailbox unavailable (-1389492669:4139:-2147467259)",
+        "email": "charlie-mo@hotmail.co.uk"},{"status": "550", "reason": "550 Requested
+        action not taken: mailbox unavailable ", "email": "bcliffysp@mail.com"},{"status":
+        "550", "reason": "550 Requested action not taken: mailbox unavailable ", "email":
+        "mohammedshahidmiah@mail.com"},{"status": "5.1.1", "reason": "550 5.1.1 The
+        email account that you tried to reach does not exist. Please try double-checking
+        the recipient''s email address for typos or unnecessary spaces. Learn more
+        at http://support.google.com/mail/bin/answer.py?answer=6596 h136si3107807ioe.6
+        - gsmtp ", "email": "marcel012@gmail.com"},{"status": "550", "reason": "550
+        Requested action not taken: mailbox unavailable ", "email": "officalpearls@outlook.com"},{"status":
+        "550", "reason": "550 Requested action not taken: mailbox unavailable ", "email":
+        "vaida.morkuanite@hotmail.com"},{"status": "5.1.1", "reason": "550 5.1.1 <t.langton@aol.co.uk>:
+        Recipient address rejected: aol.co.uk ", "email": "t.langton@aol.co.uk"},{"status":
+        "5.1.1", "reason": "550 5.1.1 The email account that you tried to reach does
+        not exist. Please try double-checking the recipient''s email address for typos
+        or unnecessary spaces. Learn more at http://support.google.com/mail/bin/answer.py?answer=6596
+        ro9si3408234igb.51 - gsmtp ", "email": "enquires@goldanchorhomes.com"},{"status":
+        "5.1.1", "reason": "550 5.1.1 unknown or illegal alias: willmilyou@icloud.com
+        ", "email": "willmilyou@icloud.com"},{"status": "554", "reason": "554 delivery
+        error: dd This user doesn''t have a yahoo.com account (mikedigbythomas@yahoo.com)
+        [-5] - mta1300.mail.ne1.yahoo.com ", "email": "mikedigbythomas@yahoo.com"},{"status":
+        "5.1.1", "reason": "550 5.1.1 <attilamuri@gmail.hu>: Recipient address rejected:
+        User unknown ", "email": "attilamuri@gmail.hu"},{"status": "5.1.1", "reason":
+        "550 5.1.1 The email account that you tried to reach does not exist. Please
+        try double-checking the recipient''s email address for typos or unnecessary
+        spaces. Learn more at http://support.google.com/mail/bin/answer.py?answer=6596
+        gw4si6209844pbc.240 - gsmtp ", "email": "sobashini.goonasekera@gmail.com"},{"status":
+        "5.1.1", "reason": "550 5.1.1 The email account that you tried to reach does
+        not exist. Please try double-checking the recipient''s email address for typos
+        or unnecessary spaces. Learn more at http://support.google.com/mail/bin/answer.py?answer=6596
+        hv9si874871igb.0 - gsmtp ", "email": "saciahanis22@gmail.com"},{"status":
+        "554", "reason": "554 delivery error: dd This user doesn''t have a yahoo.co.uk
+        account (tejal-jallosibrahim@yahoo.co.uk) [-13] - mta1072.mail.ir2.yahoo.com
+        ", "email": "tejal-jallosibrahim@yahoo.co.uk"},{"status": "550", "reason":
+        "550 Requested action not taken: mailbox unavailable ", "email": "gaylemiils1973@outlook.com"},{"status":
+        "554", "reason": "554 delivery error: dd This user doesn''t have a yahoo.co.uk
+        account (plumb_elect@yahoo.co.uk) [-5] - mta1182.mail.ir2.yahoo.com ", "email":
+        "plumb_elect@yahoo.co.uk"},{"status": "550", "reason": "550 Requested action
+        not taken: mailbox unavailable ", "email": "markpayne399@mail.com"},{"status":
+        "5.5.0", "reason": "550 Requested action not taken: mailbox unavailable (-1389492669:4139:-2147467259)",
+        "email": "ninushah@hotmail.com"},{"status": "550", "reason": "550 Requested
+        action not taken: mailbox unavailable ", "email": "sihussain@hotmail.com"},{"status":
+        "554", "reason": "554 delivery error: dd This user doesn''t have a yahoo.co.uk
+        account (tejan-jallohibrahim@yahoo.co.uk) [-13] - mta1165.mail.ir2.yahoo.com
+        ", "email": "tejan-jallohibrahim@yahoo.co.uk"},{"status": "554", "reason":
+        "554 delivery error: dd This user doesn''t have a yahoo.co.uk account (tillysenadhui@yahoo.co.uk)
+        [0] - mta1086.mail.ir2.yahoo.com ", "email": "tillysenadhui@yahoo.co.uk"},{"status":
+        "5.1.1", "reason": "550 5.1.1 The email account that you tried to reach does
+        not exist. Please try double-checking the recipient''s email address for typos
+        or unnecessary spaces. Learn more at http://support.google.com/mail/bin/answer.py?answer=6596
+        o18si1467013igx.50 - gsmtp ", "email": "vidaldipro@gmail.com"},{"status":
+        "550", "reason": "550 Requested action not taken: mailbox unavailable ", "email":
+        "ar77jds@hotmail.com"},{"status": "550", "reason": "550 Requested action not
+        taken: mailbox unavailable ", "email": "claire.scott.acc@hotmail.com"},{"status":
+        "5.1.1", "reason": "550 5.1.1 The email account that you tried to reach does
+        not exist. Please try double-checking the recipient''s email address for typos
+        or unnecessary spaces. Learn more at http://support.google.com/mail/bin/answer.py?answer=6596
+        h136si1333710ioe.6 - gsmtp ", "email": "ukpreventionserviceltd@gmail.com"},{"status":
+        "5.7.1", "reason": "554 5.7.1 <sophi@beauhanxu.com>: Recipient address rejected:
+        Unknown recipient ", "email": "sophi@beauhanxu.com"},{"status": "550", "reason":
+        "550 Unknown user ", "email": "kenhadley@aeservices.co.uk"},{"status": "550",
+        "reason": "550 Requested action not taken: mailbox unavailable ", "email":
+        "ros66chelsea@hotmail.co.uk"},{"status": "550", "reason": "550 Requested action
+        not taken: mailbox unavailable ", "email": "anobbunza@hotmail.co.uk"},{"status":
+        "550", "reason": "550 Requested action not taken: mailbox unavailable ", "email":
+        "stephanastall@hotmail.com"},{"status": "5.5.0", "reason": "550 Requested
+        action not taken: mailbox unavailable (-1389492669:4139:-2147467259)", "email":
+        "xxx@hotmail.com"},{"status": "5.1.1", "reason": "550 5.1.1 The email account
+        that you tried to reach does not exist. Please try double-checking the recipient''s
+        email address for typos or unnecessary spaces. Learn more at http://support.google.com/mail/bin/answer.py?answer=6596
+        v5si5854991ici.9 - gsmtp ", "email": "johnathanburns17@gmail.com"},{"status":
+        "5.1.1", "reason": "550 5.1.1 unknown or illegal alias: paigcat123@icloud.com
+        ", "email": "paigcat123@icloud.com"},{"status": "5.4.1", "reason": "550 5.4.1
+        [trojansecruity@btconnect.com]: Recipient address rejected: Access denied
+        ", "email": "trojansecruity@btconnect.com"}]'
+    http_version:
+  recorded_at: Mon, 02 Feb 2015 11:39:49 GMT
+recorded_with: VCR 2.9.3

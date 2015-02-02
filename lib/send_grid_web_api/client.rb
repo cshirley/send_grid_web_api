@@ -22,7 +22,7 @@ module SendGridWebApi
       to_query(options)
     end
 
-    def query_api url, options
+    def query_get_api url, options
       session.get(make_request_url(url, options)).body
     end
 
@@ -38,6 +38,7 @@ module SendGridWebApi
     def session
       @connection ||= ::Faraday.new base_url do |conn|
         conn.adapter Faraday.default_adapter
+        conn.use Faraday::Response::SendGridWebApi
       end
     end
 

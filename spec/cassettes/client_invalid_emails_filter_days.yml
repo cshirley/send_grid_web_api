@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.sendgrid.com/api/invalidemails.get.json?api_key=password123&api_user=sendgrid_user&days=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 02 Feb 2015 11:17:48 GMT
+      Content-Type:
+      - text/html
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - https://sendgrid.com
+    body:
+      encoding: UTF-8
+      string: '[{"reason": "Known bad domain", "email": "prissymarilla@outllook.com"},{"reason":
+        "Mail domain mentioned in email address is unknown", "email": "nihat.donmez@cableonexxpress.co.uk"},{"reason":
+        "Mail domain mentioned in email address is unknown", "email": "enquiries@atlamtic-es.co.uk"},{"reason":
+        "Known bad domain", "email": "lifsey1989@gmai.com"},{"reason": "Mail domain
+        mentioned in email address is unknown", "email": "nick@cadastreletd.co.uk"},{"reason":
+        "Known bad domain", "email": "nikosdarivas@gmai.com"},{"reason": "Mail domain
+        mentioned in email address is unknown", "email": "info@galxyplumbing.co.uk"},{"reason":
+        "Mail domain mentioned in email address is unknown", "email": "johnashworth@conqestcsl.co.uk"},{"reason":
+        "Mail domain mentioned in email address is unknown", "email": "andrew@mccollochcopy.co.uk"},{"reason":
+        "Mail domain mentioned in email address is unknown", "email": "mark.finigan@thebookeepingclinic.co.uk"},{"reason":
+        "Mail domain mentioned in email address is unknown", "email": "bursar@nashhill.bucks.sch.uk"},{"reason":
+        "Mail domain mentioned in email address is unknown", "email": "paul@xl-pint.co.uk"}]'
+    http_version:
+  recorded_at: Mon, 02 Feb 2015 11:17:48 GMT
+recorded_with: VCR 2.9.3

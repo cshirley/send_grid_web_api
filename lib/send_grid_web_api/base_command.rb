@@ -15,7 +15,7 @@ module SendGridWebApi
     def method_missing(method, *args, &block)
       if ENDPOINTS.include?(method)
         options = args.empty? ? {} : args.first
-        self.client.query_api("#{self.endpoint}.#{method}.#{format}", options)
+        self.client.query_get_api("#{self.endpoint}.#{method}.#{format}", options)
       else
         super
       end
