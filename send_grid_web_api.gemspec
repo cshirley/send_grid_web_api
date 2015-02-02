@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = SendGridWebApi::VERSION
   spec.authors       = ["Clive Shirley"]
   spec.email         = ["clive.shirley@mac.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{SendGrid Web API gem}
+  spec.description   = %q{SendGrid Web API gem, currently only provides support for checking status of sent email}
+  spec.homepage      = "http://github.com/cshirley"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,9 +20,9 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "faraday"
-  spec.add_development_dependency "byebug"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "vcr"
   spec.add_development_dependency "webmock"
+  spec.add_dependency "faraday"
+  spec.add_dependency "json"
 end
