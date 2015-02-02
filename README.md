@@ -1,3 +1,5 @@
+[![Coverage Status](https://coveralls.io/repos/cshirley/send_grid_web_api/badge.svg)](https://coveralls.io/r/cshirley/send_grid_web_api)
+
 # SendGridWebApi
 
 Simple gem that leverages Faraday to communicate with the SendGrid Web API.
