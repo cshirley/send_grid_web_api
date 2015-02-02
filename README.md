@@ -1,3 +1,4 @@
+[![Circle CI](https://circleci.com/gh/cshirley/send_grid_web_api.svg?style=svg)](https://circleci.com/gh/cshirley/send_grid_web_api)
 [![Coverage Status](https://coveralls.io/repos/cshirley/send_grid_web_api/badge.svg)](https://coveralls.io/r/cshirley/send_grid_web_api)
 [![GitHub version](https://badge.fury.io/gh/cshirley%2Fsend_grid_web_api.svg)](http://badge.fury.io/gh/cshirley%2Fsend_grid_web_api)
 # SendGridWebApi
