@@ -23,7 +23,7 @@ module SendGridWebApi
     end
 
     def query_get_api url, options
-      session.get(make_request_url(url, options)).body
+      JSON.parse(session.get(make_request_url(url, options)).body)
     end
 
     def query_post_api url, options
